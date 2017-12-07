@@ -1,0 +1,10 @@
+body {
+    background-color: orange;
+}
+
+#btn {
+    border-radius: 10px;
+    background-color: rgba(175, 207, 212, 1);
+    border: solid;
+    padding: 7px;
+}

@@ -1,0 +1,88 @@
+body {
+    background-color: orange;
+}
+
+main {
+    margin-top: 50px;
+}
+
+#coelec {
+    transform: translate3d(-150px, 28px, 0px);
+    color: white;
+}
+
+#btn1 {
+    transform: translate3d(155px, -20px, 0px);
+}
+
+.center {
+    background: url(../img/pkw.png);
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    padding-bottom: 30%;
+}
+
+.container {
+    margin: 0;
+    margin-top: -30px;
+    margin-bottom: -1px;
+}
+
+.center h1 {
+    text-align: center;
+    margin-left: 464px;
+}
+
+.center h2 {
+    text-align: center;
+    margin-left: 464px;
+    margin-bottom: 20px;
+}
+
+section.center section {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.abajo2 a {
+    margin-top: -368px;
+    vertical-align: middle;
+    margin-left: 650px;
+}
+
+.info {
+    margin-top: -130px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.i1 {
+    margin-right: 90px;
+    margin-left: 120px;
+}
+
+.i2 {
+    color: rgb(0, 26, 255);
+    margin-right: 120px;
+}
+
+.i3 {
+    color: red;
+    margin-right: 120px;
+}
+
+.i4 {
+    color: green;
+    margin-right: 120px;
+}
+
+.i5 {
+    color: rgb(255, 136, 0);
+    margin-right: 120px;
+}
+
+.i6 {
+    color: rgb(0, 177, 221);
+    margin-right: 120px;
+}

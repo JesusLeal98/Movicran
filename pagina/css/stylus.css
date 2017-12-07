@@ -1,0 +1,193 @@
+body,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: verdana;
+}
+
+#header section {
+    display: inline-block;
+    width: 49.6%;
+    vertical-align: middle;
+}
+
+#right {
+    text-align: center;
+}
+
+#left a {
+    color: gray;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: verdana;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#header2 {
+    width: 48.9%;
+    display: inline-block;
+}
+
+.fa.fa-envelope {
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 14px;
+    color: gray;
+}
+
+#header2 p {
+    font-size: 7px;
+    display: inline-block;
+    padding-left: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fa.fa-phone {
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    color: gray;
+    padding-left: 4px;
+}
+
+#redes {
+    width: 47.9%;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    display: inline-block;
+}
+
+#redes .fa {
+    margin-right: 3px;
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+#middle {
+    background: url(../Imagenes/header2.jpg);
+    padding: 100px;
+}
+
+h1 {
+    font-size: 31px;
+    font-family: verdana;
+}
+
+h2 {
+    color: rgba(240, 151, 18, 0.808);
+}
+
+.center {
+    text-align: center;
+}
+
+.center,
+#read,
+#go {
+    color: black;
+    border-color: black;
+    border-width: 2px;
+    height: 34px;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 19px;
+    background-color: transparent;
+}
+
+#abajo {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.item {
+    width: 250px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    padding: 45px 10px 0 10px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.item,
+.fa-medkit {
+    font-size: 63px;
+    color: rgba(247, 107, 9, 0.95);
+}
+
+.item,
+.fa-phone-square {
+    font-size: 63px;
+    color: rgba(247, 107, 9, 0.95);
+}
+
+.item,
+.fa-suitcase {
+    font-size: 63px;
+    color: rgba(247, 107, 9, 0.95);
+}
+
+.item,
+.fa-car {
+    font-size: 63px;
+    color: rgba(247, 107, 9, 0.95);
+}
+
+#desk {
+    width: 150px;
+    height: 150px;
+    border-radius: 1033px;
+    border: 1px solid rgba(146, 143, 143, 0.52);
+    margin: 0;
+    background-color: transparent;
+}
+
+div,
+.item hr {
+    border: 1px solid rgba(208, 208, 208, 0.34);
+}
+
+.item p {
+    font-size: 12px;
+}
+
+.item img {
+    position: absolute;
+    top: -33px;
+    left: 93px;
+}
+
+#desk {
+    border-radius: 300px;
+}
+
+.item,
+#more {
+    font-size: 18px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.btn_end {
+    text-align: end;
+    display: inline-block;
+}
+
+.btn_end,
+#btn_v {
+    background-color: rgba(236, 31, 31, 0.85);
+    color: white;
+    border-width: 2px;
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    border-color: rgba(68, 65, 65, 0.31);
+}
