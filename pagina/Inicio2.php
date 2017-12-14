@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +54,7 @@
                             echo "<h1> $_SESSION[login]</h1>";
                         }
                         else{
-                            header("Location: http://localhost/pagina/Inicio.php");
+                            header("Location: https://movicran.000webhostapp.com/pagina/Inicio.php");
                         }
                     ?>
                 </div>

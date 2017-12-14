@@ -1,107 +1,124 @@
-<doctype html>
-    <html>
-
-    <head>
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movicran</title>
     <link rel="stylesheet" href="css/stylus.css">
-        <title="movicran.com">
-            </title>
-            <meta charset="utf-8" />
-            <script>
-                window.addEventListener("load", function() {
-                    alert("Bienvenido a MoviCran");
-                    var botonStart = document.getElementById("read");
-                    console.log(botonStart)
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/si.css">
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<a class="navbar-brand" href="#">Venta y Renta</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a href="Inicio2.php" class="nav-link" data-toggle="pagehome">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a href="catalogo2.php" class="nav-link" data-toggle="pagehome">Catalogo</a>
+        </li>
+        <li class="nav-item">
+            <a href="servicios2.php" class="nav-link" data-toggle="pagehome">Servicios</a>
+        </li>
+    </ul>
+    <section id="login">
+        <div id="d">
+            <?php
+            session_start();
+                if(isset($_SESSION["login"])){
+                    echo "<h1> $_SESSION[login]</h1>";
+                }
+                else{
+                    header("Location: https://movicran.000webhostapp.com/pagina/Inicio.php");
+                }
+            ?>
+        </div>
+    </section>
+</div>
+</nav>
 
-                    botonStart.addEventListener("click", function() {
-                        document.location.href = "Inicio2.php";
-                    })
-                })
-            </script>
-    </head>
+<section id="header">
+<section>
+    <img src="Imagenes/carro_chido.png" alt="logo">
+</section>
 
-    <body>
-        <section id="header2">
-            <i class="fa fa-envelope"></i>
-            <p>rent_car@contact.es</p>
-            <i class="fa fa-phone"></i>
-            <p>+52 618 255 157</p>
+</section>
 
 
-        </section>
+<section id="middle">
+<section="center">
+    <section>
+        <hgroup>
+            <h1 class="top">LA MANERA MAS FACIL & RAPIDA DE TENER UN AUTO <br> TO CREATE AWESOME WEBSITE
+            </h1>
+            <h2>RAPIDO Y SENCILLO </h2>
+        </hgroup>
+        <button id="go" onclick="window.location.href='Inicio2.php'">Página de incio</button>
+    </section>
+</section>
+</section>
+
+<section id="abajo">
+<div class="item">
+    <button id="desk"><i class="fa fa-medkit"></i></button>
+    <p>
+        <strong>Asistencia Medica</strong>
+    </p>
+
+    <p>Este es un servicio que te ofrecemos al momento de comprar o rentar un auto con nosotros
+
+    </p>
+    <hr/>
+
+</div>
+<div class="item">
+    <button id="desk"><i class="fa fa-phone-square"></i></button>
+    <p>
+        <strong>Asistencia Telefonica 24/7</strong>
+    </p>
+
+    <p>Para cualquier duda o aclaracion puedes contactar con nuestros ejecutivos telefonicos, que te atenderan 24/7 los 365 dias del años
+    </p>
+    <hr/>
+
+</div>
+
+<div class="item">
+    <button id="desk"><i class="fa fa-suitcase"></i></button>
+    <p>
+        <strong>Seguros</strong>
+    </p>
+
+    <p>Te ayudaremos en cualquier problema externo a ti con nuestro equipo de seguros</p>
+    <hr/>
+
+</div>
+<div class="item">
+    <button id="desk"><i class="fa fa-car"></i></button>
+    <p>
+        <strong>Mecanicos A Tu Servicios</strong>
+    </p>
+
+    <p>Un gran equipo de mecanicos estaran a tu disposicion 24/7</p>
+    <hr/>
+
+</div>
+</section>
 
 
-
-
-        <hr/>
-        <section id="header">
-            <section>
-                <img src="Imagenes/carro_chido.png" alt="logo">
-            </section>
-
-        </section>
-
-
-        <section id="middle">
-            <section="center">
-                <section>
-                    <hgroup>
-                        <h1 class="top">LA MANERA MAS FACIL & RAPIDA DE TENER UN AUTO <br> TO CREATE AWESOME WEBSITE
-                        </h1>
-                        <h2>RAPIDO Y SENCILLO </h2>
-                    </hgroup>
-                    <button id="read">Pagina de inicio</button>
-                </section>
-        </section>
-        </section>
-
-        <section id="abajo">
-            <div class="item">
-                <button id="desk"><i class="fa fa-medkit"></i></button>
-                <p>
-                    <strong>Asistencia Medica</strong>
-                </p>
-
-                <p>Este es un servicio que te ofrecemos al momento de comprar o rentar un auto con nosotros
-
-                </p>
-                <hr/>
-
-            </div>
-            <div class="item">
-                <button id="desk"><i class="fa fa-phone-square"></i></button>
-                <p>
-                    <strong>Asistencia Telefonica 24/7</strong>
-                </p>
-
-                <p>Para cualquier duda o aclaracion puedes contactar con nuestros ejecutivos telefonicos, que te atenderan 24/7 los 365 dias del años
-                </p>
-                <hr/>
-
-            </div>
-
-            <div class="item">
-                <button id="desk"><i class="fa fa-suitcase"></i></button>
-                <p>
-                    <strong>Seguros</strong>
-                </p>
-
-                <p>Te ayudaremos en cualquier problema externo a ti con nuestro equipo de seguros</p>
-                <hr/>
-
-            </div>
-            <div class="item">
-                <button id="desk"><i class="fa fa-car"></i></button>
-                <p>
-                    <strong>Mecanicos A Tu Servicios</strong>
-                </p>
-
-                <p>Un gran equipo de mecanicos estaran a tu disposicion 24/7</p>
-                <hr/>
-
-            </div>
-        </section>
-
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min"></script>
     </body>
 
-    </html>
+    
+
+</html>

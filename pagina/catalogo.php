@@ -37,7 +37,7 @@
                 <a href="#" class="nav-link" data-toggle="pagehome">Catalogo</a>
             </li>
             <li class="nav-item active">
-                <a href="servicios.php" class="nav-link" data-toggle="pagehome">Servicios</a>
+                <a href="servicios1.php" class="nav-link" data-toggle="pagehome">Servicios</a>
             </li>
         </ul>
         <form class="navbar-form navbar-right" role="form" action="Inicio.php" method="post">
@@ -46,6 +46,7 @@
         </form>
     </div>
 </nav>
+
 <div class="carros">
 <div id="ferrarilog">
 <img src="img/ferrarilogo.png" alt="Logo Ferrari">
@@ -61,7 +62,7 @@
 </div>
 <div id="lamborghinilog">
 <img src="img/LamborghiniLogo-1.png" alt="Logo Lamborghini">
-<button id="lamb" onclick="window.location.href='lamborghini.php'">Ver mas...</button>
+<button id="lamb" onclick="window.location.href='Lamborghini.php'">Ver mas...</button>
 </div>
 </div>
 </body>

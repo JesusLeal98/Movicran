@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,60 +49,42 @@
                     echo "<h1> $_SESSION[login]</h1>";
                 }
                 else{
-                    header("Location: http://localhost/pagina/Inicio.php");
+                    header("Location: https://movicran.000webhostapp.com/pagina/Inicio.php");
                 }
             ?>
         </div>
     </section>
 </div>
 </nav>
-        <section id="center">
-        <div class="lamborgini">
-            <img src="img/Lamborghini-Huracan.png" alt="Lamborghini Huracán">
-            <hgroup>
-            <h1><strong>Lamborghini Huracán</strong></h1>
-            <p>El Huracán, con su motor V10 aspirado de 610 CV, es capaz de llevarle de 0 a 100 km/h en 3,2 segundos y de garantizarle al mismo tiempo toda la tecnología necesaria para poder conducirlo de la mejor manera posible.
-Diseñado para garantizar las mejores prestaciones y ser controlable en cualquier situación de conducción, es fácil de llevar al límite y extremadamente emocionante, gracias a tecnologías como el cambio Lamborghini Doppia Frizione (LDF) y el sistema de tracción total con control electrónico.</p>
-            </hgroup>
-            <a id="comprar" href="vip.php" class="nav-link">Comprar Ahora</a>
-            <a id="rentar" href="vip.php" class="nav-link">Rentar Ahora</a>
-        </div>
-        </section>
-        <section id="center">
-        <div class="lamborgini">
-            <img src="img/Aventador.png" alt="Lamborghini Aventator">
-            <hgroup>
-            <h1><strong>Lamborghini Aventator</strong></h1>
-            <p>El Aventador fue creado con el objetivo de adelantarse al futuro, como se refleja en el uso de tecnologías innovadoras, tales como el motor V12, y en el uso de la fibra de carbono.
-Verdaderas obras maestras de diseño que expresan dinamismo y agresividad y que han hecho del monocasco de carbono su punta de lanza. El interior del Aventador combina tecnologías de altísimo nivel y equipamientos de lujo con materiales de altísima calidad magistralmente elaborados, como exige la mejor tradición italiana.</p>
-            </hgroup>
-            <a id="comprar" href="vip.php" class="nav-link">Comprar Ahora</a>
-            <a id="rentar" href="vip.php" class="nav-link">Rentar Ahora</a>
-        </div>
-        </section>
-        <section id="center">
-        <div class="lamborgini">
-            <img src="img/Lamborghini-Veneno-Roadsterpng.png" alt="Lamborghini One Off">
-            <hgroup>
-            <h1><strong>Lamborghini One Off</strong></h1>
-            <p>Los One-Off son Lamborghini más exclusivos, fabricados en edición limitada para un reducido y selectísimo número de clientes. Los One-Off, auténtica tecnología punta en el ámbito de los superdeportivos, representan el espíritu Lamborghini más puro en todos los aspectos y cuentan con las características más avanzadas disponibles, tanto en su diseño como en su tecnología</p>
-            </hgroup>
-            <a id="comprar" href="vip.php" class="nav-link">Comprar Ahora</a>
-            <a id="rentar" href="vip.php" class="nav-link">Rentar Ahora</a>
-        </div>
-        </section>
-        <section id="center">
-        <div class="lamborgini">
-            <img src="img/Lamborghini-Asterion.png" alt="Lamborghini Concept Asterion">
-            <hgroup>
-            <h1><strong>Lamborghini Concept Asterion</strong></h1>
-            <p>Los modelos más visionarios, ejemplares únicos destinados a definir los límites más altos de tecnología y diseño. Presentados en los Salones Internacionales más importantes, ofrecen una mirada exclusiva a las soluciones más innovadoras que Lamborghini podría adoptar en sus futuros modelos de serie.</p>
-            </hgroup>
-            <a id="comprar" href="vip.php" class="nav-link">Comprar Ahora</a>
-            <a id="rentar" href="vip.php" class="nav-link">Rentar Ahora</a>
-        </div>
-        </section>
-    </section>
+<?php
+$enlace = mysql_connect('localhost','id3957045_jesus','#Naruto89');
+mysql_select_db('id3957045_paginaweb');
+$resultado = mysql_query('SELECT titulo FROM lambo;');
+for($i=0;$i<mysql_num_rows($resultado);$i++){
+?>
+<section id="center">
+<div class="lamborgini">
+<img src="<?php
+    $resultado = mysql_query('SELECT img FROM lambo;');
+    echo mysql_result($resultado,$i);
+?>" alt="Lamborghini Huracán">
+<hgroup>
+<h1><strong><?php
+    $resultado = mysql_query('SELECT titulo FROM lambo;');
+    echo mysql_result($resultado,$i);
+?></strong></h1>
+<p><?php
+    $resultado = mysql_query('SELECT descrpcion FROM lambo;');
+    echo mysql_result($resultado,$i);
+?></p>
+</hgroup>
+<a id="comprar" href="vip.php" class="nav-link">Comprar Ahora</a>
+<a id="rentar" href="vip.php" class="nav-link">Rentar Ahora</a>
+</div>
+</section>
+<?php
+}
+?>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <head>
 <link rel="stylesheet" href="css/bootstrap-1.css">
 <link rel="stylesheet" href="css/log.css">
@@ -33,7 +36,7 @@ if(!$autenticado){
 else{ 
   session_start();
   $_SESSION["login"]=$correo;
-  header("Location: http://localhost/pagina/Inicio2.php");
+  header("Location: https://movicran.000webhostapp.com/pagina/Inicio2.php");
   die();
     }
 ?>

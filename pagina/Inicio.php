@@ -40,7 +40,7 @@
                     <a href="catalogo.php" class="nav-link" data-toggle="pagehome">Catalogo</a>
                 </li>
                 <li class="nav-item">
-                    <a href="servicios.php" class="nav-link" data-toggle="pagehome">Servicios</a>
+                    <a href="servicios1.php" class="nav-link" data-toggle="pagehome">Servicios</a>
                 </li>
             </ul>
             <form class="navbar-form navbar-right" role="form" action="Inicio.php" method="post">

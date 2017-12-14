@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +51,7 @@
                     echo "<h1> $_SESSION[login]</h1>";
                 }
                 else{
-                    header("Location: http://localhost/pagina/Inicio.php");
+                    header("Location: https://movicran.000webhostapp.com/pagina/Inicio.php");
                 }
             ?>
         </div>
@@ -70,7 +73,7 @@
 </div>
 <div id="lamborghinilog">
 <img src="img/LamborghiniLogo-1.png" alt="Logo Lamborghini">
-<button id="lamb" onclick="window.location.href='lamborghini2.php'">Ver mas...</button>
+<button id="lamb" onclick="window.location.href='Lamborghini2.php'">Ver mas...</button>
 </div>
 </div>
 </body>
